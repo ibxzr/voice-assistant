@@ -25,6 +25,13 @@ pip install openai pyttsx3 pyaudio
 On Windows, if pyaudio fails to install, use:
 pip install pipwin
 pipwin install pyaudio
-##🔑 Setup
-
+## 🔑 Setup
 Replace "YOUR_API_KEY" with your actual OpenAI API key in the script.
+client = openai.OpenAI(api_key="YOUR_API_KEY") 
+## ▶️ Usage
+Just run the script: python voice_assistant.py It will:
+1. Record your voice for 5 seconds.
+2. Transcribe it.
+3. Generate a reply.
+4. Speak it back to you
+## 🌐 Language Support - By default, the assistant speaks English. - You can change the system prompt and voice settings to support Arabic or any other language. 
