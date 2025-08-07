@@ -20,12 +20,13 @@ This is a simple Python-based voice assistant that records your voice, transcrib
 
 Install requirements with:
 
-```bash
+bash
 pip install openai pyttsx3 pyaudio
 On Windows, if pyaudio fails to install, use:
 pip install pipwin
 pipwin install pyaudio
-## 🔑 Setup
+
+ 🔑 Setup
 Replace "YOUR_API_KEY" with your actual OpenAI API key in the script.
 client = openai.OpenAI(api_key="YOUR_API_KEY") 
 ## ▶️ Usage
