@@ -51,7 +51,11 @@ Below is a screenshot of the working assistant:
 ![output screenshot](output.png)
 
 ---
+## 🎬 Demo Video
 
+[![Watch the demo](https://img.youtube.com/vi/oNVfRoWYu48/0.jpg)](https://www.youtube.com/watch?v=oNVfRoWYu48)
+
+---
 ## 📌 Notes
 
 - Make sure your microphone is connected and working properly.
