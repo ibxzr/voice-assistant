@@ -7,26 +7,30 @@ This project is a simple voice assistant built with Python that allows users to 
 ## 🛠️ Setup
 
 Install the required dependencies:
+```bash
 pip install openai pyaudio pyttsx3
-
+```
 ---
 
 ## 🚀 Usage
 
 Run the script:
+```bash
 python voice_assistant.py
-
+```
 ---
 
 ## 🌐 Language
 
 The assistant can be set up to speak and understand either English or Arabic.  
 To change the language, modify the system message inside the chat_with_gpt function:
+```python
 {"role": "system", "content": "You are a helpful voice assistant."}
-
+```
 For Arabic:
+```python
 {"role": "system", "content": "أنت مساعد صوتي مفيد وتتحدث العربية."}
-
+```
 Make sure to also speak in the same language you want the assistant to respond with.
 
 ---
@@ -35,8 +39,8 @@ Make sure to also speak in the same language you want the assistant to respond w
 
 The assistant uses the following OpenAI models:
 
-- Whisper (`whisper-1`) for speech-to-text transcription
-- GPT-4o for generating natural responses
+- **Whisper (`whisper-1`) for speech-to-text transcription
+- **GPT-4o for generating natural responses
 
 ---
 
