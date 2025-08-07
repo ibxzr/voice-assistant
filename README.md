@@ -52,6 +52,7 @@ Below is a screenshot of the working assistant:
 
 ---
 ## 🎬 Demo Video
+click to open video
 
 [![Watch the demo](https://img.youtube.com/vi/oNVfRoWYu48/0.jpg)](https://www.youtube.com/watch?v=oNVfRoWYu48)
 
