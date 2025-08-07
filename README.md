@@ -1,5 +1,4 @@
-# voice-assistant
-Python voice assistant using OpenAI Whisper for speech-to-text, GPT-4o for responses, and pyttsx3 for text-to-speech.
+
 # Voice Assistant 🎙️🤖 
 This is a simple Python-based voice assistant that records your voice, transcribes it using OpenAI Whisper, sends it to GPT-4o for a response, and reads the response out loud using pyttsx3.
 ## 🛠️ Features 
