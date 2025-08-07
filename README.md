@@ -1,38 +1,55 @@
-# Voice Assistant 🎙️🤖
+# 🎙️🤖 Voice Assistant with OpenAI and Python
 
-This is a simple Python-based voice assistant that records your voice, transcribes it using OpenAI Whisper, sends it to GPT-4o for a response, and reads the response out loud using pyttsx3.
+This project is a simple voice assistant built with Python that allows users to speak into their microphone, transcribe the speech using OpenAI's Whisper model, generate a response using GPT-4o, and read it aloud using pyttsx3.
 
-## 🛠️ Features
-- Records audio through your microphone
-- Transcribes audio to text using OpenAI Whisper
-- Gets response from GPT-4o (OpenAI)
-- Speaks the reply using a selected voice (TTS via pyttsx3)
+---
 
-## 📷 Output Example
-![Output Example](output_example.png)
+## 🛠️ Setup
 
-## 📦 Requirements
-- Python 3.8+
-- openai
-- pyttsx3
-- pyaudio
-- wave
+Install the required dependencies:
+pip install openai pyaudio pyttsx3
 
-Install requirements with:
+---
 
-bash
-pip install openai pyttsx3 pyaudio
-On Windows, if pyaudio fails to install, use:
-pip install pipwin
-pipwin install pyaudio
+## 🚀 Usage
 
- 🔑 Setup
-Replace "YOUR_API_KEY" with your actual OpenAI API key in the script.
-client = openai.OpenAI(api_key="YOUR_API_KEY") 
-## ▶️ Usage
-Just run the script: python voice_assistant.py It will:
-1. Record your voice for 5 seconds.
-2. Transcribe it.
-3. Generate a reply.
-4. Speak it back to you
-## 🌐 Language Support - By default, the assistant speaks English. - You can change the system prompt and voice settings to support Arabic or any other language. 
+Run the script:
+python voice_assistant.py
+
+---
+
+## 🌐 Language
+
+The assistant can be set up to speak and understand either English or Arabic.  
+To change the language, modify the system message inside the chat_with_gpt function:
+{"role": "system", "content": "You are a helpful voice assistant."}
+
+For Arabic:
+{"role": "system", "content": "أنت مساعد صوتي مفيد وتتحدث العربية."}
+
+Make sure to also speak in the same language you want the assistant to respond with.
+
+---
+
+## 🤖 Model
+
+The assistant uses the following OpenAI models:
+
+- Whisper (`whisper-1`) for speech-to-text transcription
+- GPT-4o for generating natural responses
+
+---
+
+## 🖼️ Output Example
+
+Below is a screenshot of the working assistant:
+
+![output screenshot](output.png)
+
+---
+
+## 📌 Notes
+
+- Make sure your microphone is connected and working properly.
+- The response is spoken only for the first reply in this basic version.
+- You can adjust the voice settings in the code by changing the voice index.
