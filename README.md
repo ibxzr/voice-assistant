@@ -16,7 +16,7 @@ pip install openai pyaudio pyttsx3
 
 Run the script:
 ```bash
-python voice_assistant.py
+python voice_chat.py
 ```
 ---
 
